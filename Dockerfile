@@ -1,7 +1,6 @@
 # start from base
 FROM ubuntu:14.04
-MAINTAINER lin yuan <linyuan@live.cn>
-
+LABEL maintainer="linyuan@live.cn"
 # install system-wide deps for python and node
 RUN apt-get -yqq update
 RUN apt-get -yqq install python-pip python-dev
